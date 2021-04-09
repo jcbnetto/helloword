@@ -43,6 +43,16 @@ class _ContadorState extends State<Contador> {
         icon: Icon(Icons.add),
         label: Text("Somar"),
       ),
+      bottomNavigationBar: BottomNavigationBar(
+          backgroundColor: Colors.deepOrange,
+          fixedColor: Colors.white,
+          unselectedItemColor: Colors.green,
+        items:[
+          BottomNavigationBarItem(icon: Icon(Icons.home), label:  "Home"),
+          BottomNavigationBarItem(icon: Icon(Icons.home), label:  "Restaurantes"),
+          BottomNavigationBarItem(icon: Icon(Icons.home), label:  "Atendimento"),
+        ]
+      ),
     );
   }
 }
